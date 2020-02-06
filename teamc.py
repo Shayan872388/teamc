@@ -45,6 +45,12 @@ def moveFunction(userInput, room):
     elif userInput == "w" and doesRoomExist(room - 100) == True:
         room = room - 100
     return room
+def doesItemExist(itemNumber):
+    try:
+        if not itemArray[itemNumber] == False:
+            print("Item" + itemArray[location])
+    except:
+      return
 
 def main():
     room = 202
